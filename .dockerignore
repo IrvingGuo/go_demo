@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+.vscode
+logs
+latest_log
+out
+# include the basic xlsx
+*_*.xlsx
+*.sql
+*.md
+files

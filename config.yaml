@@ -1,0 +1,20 @@
+# JRS Configurations
+
+system:
+  addr: '0.0.0.0:5001'
+
+mysql:
+  dsn: 'root:root@tcp(10.70.9.111:3306)/jrs?charset=utf8mb4&parseTime=True&loc=UTC'
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: false
+
+ldap:
+  url: 'ldap://10.70.8.3:389'
+
+jwt:
+  duration: 24
+  secret: "123g3d28df4j8" # any string is ok
+
+excel:
+  master-res-plan-prefix: 'Master RD Resource Plan'

@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  jrs-go-server:
+    image: ronannnn/jrs-go:1.0
+    restart: always
+    container_name: jrs-go-server
+    ports:
+      - 5001:5001
+    volumes:
+      - ./Master Resource Plan.xlsx:/app/Master Resource Plan.xlsx
+
+  # jrs-mysql:
+  #   image: mysql
+  #   ports:
+  #     - 3306:3306
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: root
+  #     MYSQL_DATABASE: jrs
